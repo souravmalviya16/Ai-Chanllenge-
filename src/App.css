@@ -1,0 +1,102 @@
+.App {
+  background-color: #ffffff;
+  max-width: 900px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Title */
+h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Horizontal layout */
+.container {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Input section */
+.input-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Answer section */
+.answer-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+/* Textarea styling */
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+/* Button styling */
+button {
+  padding: 10px 24px;
+  font-size: 1rem;
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005ed3;
+}
+
+button:disabled {
+  background-color: #b3c9f3;
+  cursor: not-allowed;
+}
+
+/* Answer display */
+.answer-block {
+  background-color: #b4acac;
+  padding: 14px 16px;
+  border-radius: 10px;
+  min-height: 120px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #333;
+}
+
+/* Responsive fix for mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .answer-section {
+    text-align: left;
+  }
+}
